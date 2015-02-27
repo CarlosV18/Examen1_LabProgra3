@@ -17,8 +17,8 @@ SDL_Event Event;
 SDL_Texture *background,*fondo_winner, *fondo_loser;
 SDL_Rect rect_background, rect_winner, rect_loser;
 int puntos=0;
-int vidas=15;
 int dificultad=5;
+bool loser=false;
 
 
 
@@ -61,7 +61,7 @@ int main( int argc, char* args[] )
 
     fondo_loser = IMG_LoadTexture(renderer,"Pantalla_Perdida.png");
     SDL_QueryTexture(background, NULL, NULL, &w, &h);
-    rect_loser.x = 0;
+    rect_loser.x = -15;
     rect_loser.y = 0;
     rect_loser.w = w;
     rect_loser.h = h;
@@ -88,6 +88,10 @@ int main( int argc, char* args[] )
             }
         }
 
+        if(frame>25000 && puntos<20){
+            loser=true;
+        }
+
         if(currentKeyStates[SDL_SCANCODE_D]){
            for(list<Personaje*>::iterator p=personajes.begin();p!=personajes.end();p++)
                 (*p)->velocidad=2;
@@ -100,7 +104,7 @@ int main( int argc, char* args[] )
             dificultad=5;
         }
 
-        if(puntos<5){
+        if(puntos<20 && loser==false){
 
         if(frame%4000==0)
         {
@@ -123,7 +127,7 @@ int main( int argc, char* args[] )
         SDL_SetRenderDrawColor(renderer, 255, 100, 0, 255);
 
         // Clear the entire screen to our selected color.
-        if(puntos<5){
+        if(puntos<20 && loser==false){
         SDL_RenderClear(renderer);
 
         SDL_RenderCopy(renderer, background, NULL, &rect_background);
@@ -143,20 +147,25 @@ int main( int argc, char* args[] )
                 break;
             }
 
-            if((*p)->no_pego && (*p)->atacando==false){
-                vidas-=1;
-                cout<<"Vidas restantes: "<<vidas<<endl;
-            }
         }
         }else{
 
-            SDL_RenderCopy(renderer, fondo_winner, NULL, &rect_winner);
+            if(loser){
+                SDL_RenderCopy(renderer, fondo_loser, NULL, &rect_loser);
+            }else{
+                SDL_RenderCopy(renderer, fondo_winner, NULL, &rect_winner);
+
+            }
+
+
+
         }
 
 
         SDL_RenderPresent(renderer);
 
         frame++;
+        cout<<"Numero de Frame: "<<frame<<endl;
     }
 
 	return 0;

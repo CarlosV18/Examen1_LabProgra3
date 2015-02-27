@@ -732,19 +732,19 @@
 1425050614 c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigoazul.h
 	"Enemigo.h"
 
-1425059281 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigorojo.cpp
+1425061844 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigorojo.cpp
 	"EnemigoRojo.h"
 
 1425050623 c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigorojo.h
 	"Enemigo.h"
 
-1425059281 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigoverde.cpp
+1425061844 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigoverde.cpp
 	"EnemigoVerde.h"
 
 1425050631 c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\enemigoverde.h
 	"Enemigo.h"
 
-1425056642 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\main.cpp
+1425062186 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\main.cpp
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<iostream>
@@ -758,9 +758,9 @@
 1425008897 c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\sho.h
 	"Personaje.h"
 
-1425059281 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\personaje.cpp
+1425062062 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\personaje.cpp
 	"Personaje.h"
 
-1425059281 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\sho.cpp
+1425059847 source:c:\users\pc\documents\unitec\progra iii\proyectos sin modificar\beatemup-master\sho.cpp
 	"Sho.h"
 

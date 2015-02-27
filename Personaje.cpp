@@ -113,34 +113,7 @@ void Personaje::attackCheck()
     }
 }
 
-//void noAttackCheck(){
-//    if(atacando==false){
-//        //detecto colision con los demas personajes
-//        list<Personaje*>::iterator i;
-//        for(i= personajes->begin();
-//            i!=personajes->end();
-//            i++)
-//        {
-//            if((*i)!=this)
-//            {
-//                if(colision((*i)->hitbox))
-//                {
-//                    cout<<"Colision! "<< frame <<endl;
-//                    if((*i)->id==1 ){
-//                        (*i)->no_pego=true;
-//                        cout<<"no pasa nada"<<endl;
-////                    }else{
-////                        (*i)->muerto = true;
-////
-////                    }
-//
-//                }
-//            }
-//        }
-//
-//    }
-//}
-//}
+
 
 void Personaje::setAnimacion(string nombre)
 {

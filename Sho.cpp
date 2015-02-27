@@ -84,13 +84,13 @@ void Sho::act()
     if(currentKeyStates[SDL_SCANCODE_RIGHT]&& rect.x<845)
     {
         rect.x++;
-        cout<<"Coordeanadas en X: "<<rect.x<<endl;
+        //cout<<"Coordeanadas en X: "<<rect.x<<endl;
         setAnimacion("walk_right");
     }
     else if(currentKeyStates[SDL_SCANCODE_LEFT]&& rect.x>-39)
     {
         rect.x--;
-        cout<<"Coordeanadas en X: "<<rect.x<<endl;
+       // cout<<"Coordeanadas en X: "<<rect.x<<endl;
         setAnimacion("walk_left");
     }
     else
